@@ -1,0 +1,106 @@
+/*
+Theme Name: Plain Voice
+Author: Tariq al-Kalam Al-Qaysari
+Description: A minimalist, typography-first WordPress theme designed for quiet readability.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+Text Domain: plain-voice
+*/
+
+/* ————— Design Tokens & Variables ————— */
+:root {
+  --bg: #fbfbf9;
+  --paper: #ffffff;
+  --ink: #1a1a1a;
+  --faded: #666666;
+  --rule: #e5e5e0;
+  --accent: #2b5b84;
+  --font-serif: "Charter", "Georgia", "Cambria", serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  line-height: 1.65;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 1.5rem;
+}
+
+.site-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.site-title a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.site-description {
+  color: var(--faded);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  margin: 0.25rem 0 1rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.entry {
+  margin-bottom: 3.5rem;
+}
+
+.entry-title {
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+}
+
+.entry-title a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.entry-meta {
+  color: var(--faded);
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
+}
+
+.more {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
